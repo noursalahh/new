@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+on: push
+ jobs:
+   Explore-GitHub-Actions:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Print the triggering event
+         run: echo "the job was triggered by ${{ github.event_name }}."
+       - name: Check out repository code action
+         uses: actions/checkout@v4
